@@ -15,7 +15,7 @@ and the original contents of all original files in the directories:
 `_layouts`
 `_includes`
 
-Anything not originally part of deepidea's work (anything committed after commit [6016712](https://github.com/solanto/wonderland.js/commit/601671270b0178a56aea3e2887fbc6a0960d6d38)) is licensed under the GPL-3.0 unless otherwise stated.
+Anything not originally part of deepidea's work (almost anything committed after commit [6016712](https://github.com/solanto/wonderland.js/commit/601671270b0178a56aea3e2887fbc6a0960d6d38); more details are available in the commit history) is licensed under the GPL-3.0 unless otherwise stated.
 
 ### Original License Text
 
