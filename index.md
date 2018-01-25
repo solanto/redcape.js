@@ -12,4 +12,4 @@ Responsive pages are the future of the web. Many of the webpages you use every d
 
 The instructions that tell a cat (or Dinah, at least) how it should act are spoken in English.
 
-The instructions that tell a browser how a page should act are written in *JavaScript*.
+The instructions that tell a browser how a page should act are written in *JavaScript*. 
