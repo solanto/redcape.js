@@ -1,2 +1,22 @@
 # Site settings
-title: online presentation
+
+title: wonderland.js
+encoding: UTF-8
+
+collections:
+  - course
+
+defaults:
+  - scope:
+      path: ""
+      type: "course"
+    values:
+      layout: "presentation"
+  - scope:
+      path: ""
+      type: "welcome"
+    values:
+      layout: "welcome"
+
+sass:
+    sass-dir: _sass
