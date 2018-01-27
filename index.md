@@ -1,4 +1,5 @@
 ---
+title: redcape.js
 layout: welcome
 ---
 
