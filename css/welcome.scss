@@ -30,13 +30,11 @@ DEALINGS IN THE SOFTWARE.
 @import "colors";
 @import url('https://fonts.googleapis.com/css?family=Overpass+Mono|Lato|Lora|Fredericka+the+Great');
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300);
-
 $blue:#8DD9FF;
 $yellow:#FFDA00;
 
 .material-icons.md-light {
-  color: rgba(255, 255, 255, 1);
+  color: #FFFFFF;
 }
 
 .material-icons.md-18 { font-size: 18px; }
@@ -66,20 +64,20 @@ $yellow:#FFDA00;
   text-align: center;
   padding: 40px;
   width: 100%;
-}
 
-#wonder {
-  justify-content: flex-end;
-  flex-basis: 0.5vw;
-  font-family: Fredericka the Great;
-  font-size: 110px;
-}
+  #redcape {
+    justify-content: flex-end;
+    flex-basis: 0.5vw;
+    font-family: Fredericka the Great, Times New Roman, Tinos, serif;
+    font-size: 110px;
+  }
 
-#js {
-  position: relative;
-  flex-basis: 50px;
-  font-family: Overpass Mono;
-  font-size: 30px;
+  #js {
+    position: relative;
+    flex-basis: 50px;
+    font-family: Overpass Mono;
+    font-size: 30px;
+  }
 }
 
 #jsoffset {
@@ -93,10 +91,18 @@ $yellow:#FFDA00;
 }
 
 html, body {
-  background-color: $aubergine;
   width: 100%;
   height: 100%;
   font-family: Lato, sans-serif;
+  transition: background-color 6s;
+}
+
+.bright {
+  background-color: $auburn;
+}
+
+.muted {
+  background-color: darken($auburn, 8%);
 }
 
 .intro {
@@ -108,11 +114,12 @@ html, body {
 
 #img {
   position: relative;
-  background-image: url(/images/door.jpg);
+  background-color: #0A2421;
+  background-image: url(images/foggywoods.jpg);
+  background-position: center bottom;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  // display: block;
   width: 100%;
   height: 70vh;
   z-index: 1;
@@ -141,9 +148,6 @@ html, body {
   }
 }
 
-hr {
-  margin-bottom: 20px;
-}
 
 .intro .overlay {
   position: absolute;
@@ -163,10 +167,6 @@ hr {
   }
 }
 
-blockquote {
-  font-family: Overpass Mono;
-}
-
 .scrollspacer {
   height: 15vh;
   width: auto;
@@ -180,7 +180,18 @@ blockquote {
   padding: 0 5vw 0 5vw;
   color: white;
   font-size: 24px;
-  p {margin-bottom: 1.5rem;}
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  hr {
+    margin: 20px 0 20px 0;
+    border-color: white;
+  }
+
+  blockquote, code {
+    font-family: Overpass Mono;
+  }
 }
 
 .copy .teaser {

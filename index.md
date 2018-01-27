@@ -2,14 +2,22 @@
 layout: welcome
 ---
 
-> Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the ~~book~~ *webpage* her sister was reading, but it had ~~no pictures or conversations~~ *nothing responsive* in it, "and what is the use of a ~~book~~ *webpage*," thought Alice "without ~~pictures or conversations~~ *anything responsive*?"
+```javascript
+var redcape = new person();
+redcape.name = "Little Red-Cape";
+redcape.clothes = new cape();
+redcape.clothes.color = rgb(255, 0, 0);
+```
 
 ---
 
-Alice makes a good point.
+Responsive pages are the future of the web. Many of the webpages you use every day are much more than static; they <span id="move">move</span>, change <span id="color">color</span>, and react to your <span id="input">input</span>.
 
-Responsive pages are the future of the web. Many of the webpages you use every day are much more than static; they move, change color, and react to your input.
+The instructions Mother gives to Red-Cape are spoken in English.
+> Stay on the path and don't run, or you might fall.
 
-The instructions that tell a cat (or Dinah, at least) how it should act are spoken in English.
-
-The instructions that tell a browser how a page should act are written in *JavaScript*. 
+The instructions that tell a browser how a page should act are written in JavaScript.
+```javascript
+redcape.stayOnPath = true;
+redcape.walk();
+```

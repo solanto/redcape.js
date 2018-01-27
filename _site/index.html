@@ -30,14 +30,15 @@ DEALINGS IN THE SOFTWARE.
 	<meta charset="utf-8">
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="/css/welcome.css" />
+	<link rel="stylesheet" href="css/welcome.css" />
+	<script src="js/welcome.js"></script>
 
-	<body>
+	<body class="bright">
 		<figure class="intro">
 			<div id="img"></div>
 			<figcaption class="caption">
 				<div id="title">
-					<h1 id="wonder">wonderland</h1>
+					<h1 id="redcape">redcape</h1>
 					<div id="jswrap">
 						<h3 id="js">.js</h3>
 					</div>
@@ -48,21 +49,26 @@ DEALINGS IN THE SOFTWARE.
 			<div class="scrollspacer"></div>
 			<i class="material-icons md-light md-36 downarrow" id="arrow">keyboard_arrow_down</i>
 			<div class="scrollspacer"></div>
-			<p class="teaser"><blockquote>
-  <p>Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the <del>book</del> <em>webpage</em> her sister was reading, but it had <del>no pictures or conversations</del> <em>nothing responsive</em> in it, “and what is the use of a <del>book</del> <em>webpage</em>,” thought Alice “without <del>pictures or conversations</del> <em>anything responsive</em>?”</p>
-</blockquote>
+			<p class="teaser"><div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">redcape</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">person</span><span class="p">();</span>
+<span class="nx">redcape</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="s2">"Little Red-Cape"</span><span class="p">;</span>
+<span class="nx">redcape</span><span class="p">.</span><span class="nx">clothes</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">cape</span><span class="p">();</span>
+<span class="nx">redcape</span><span class="p">.</span><span class="nx">clothes</span><span class="p">.</span><span class="nx">color</span> <span class="o">=</span> <span class="nx">rgb</span><span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+</code></pre></div></div>
 
 <hr />
 
-<p>Alice makes a good point.</p>
+<p>Responsive pages are the future of the web. Many of the webpages you use every day are much more than static; they <span id="move">move</span>, change <span id="color">color</span>, and react to your <span id="input">input</span>.</p>
 
-<p>Responsive pages are the future of the web. Many of the webpages you use every day are much more than static; they move, change color, and react to your input.</p>
+<p>The instructions Mother gives to Red-Cape are spoken in English.</p>
+<blockquote>
+  <p>Stay on the path and don’t run, or you might fall.</p>
+</blockquote>
 
-<p>The instructions that tell a cat (or Dinah, at least) how it should act are spoken in English.</p>
-
-<p>The instructions that tell a browser how a page should act are written in <em>JavaScript</em>.</p>
+<p>The instructions that tell a browser how a page should act are written in JavaScript.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">redcape</span><span class="p">.</span><span class="nx">stayOnPath</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="nx">redcape</span><span class="p">.</span><span class="nx">walk</span><span class="p">();</span>
+</code></pre></div></div>
 </p>
 		</article>
 	</body>
-	<script src="/js/welcome.js"></script>
 </html>
