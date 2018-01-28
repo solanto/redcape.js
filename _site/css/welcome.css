@@ -33,13 +33,13 @@ DEALINGS IN THE SOFTWARE.
 
 .material-icons.md-48 { font-size: 48px; }
 
-#arrow { margin-top: 15px; display: flex; justify-content: center; transition: opacity 0.5s; }
+#arrow { margin-top: 15px; display: flex; justify-content: center; transition: opacity 0.5s; user-select: none; }
 
 .downarrow { opacity: 1; }
 
 .arrowfade { opacity: 0; }
 
-#title { display: flex; align-items: baseline; justify-content: center; text-align: center; padding: 40px; width: 100%; }
+#title { display: flex; align-items: baseline; justify-content: center; text-align: center; padding: 40px; width: 100%; user-select: none; }
 #title #redcape { justify-content: flex-end; flex-basis: 0.5vw; font-family: Fredericka the Great, Times New Roman, Tinos, serif; font-size: 110px; }
 #title #js { position: relative; flex-basis: 50px; font-family: Overpass Mono; font-size: 30px; }
 
@@ -51,11 +51,16 @@ html, body { width: 100%; height: 100%; font-family: Lato, sans-serif; transitio
 
 .bright { background-color: #9B2620; }
 
-.muted { background-color: #791e19; }
+.muted { background-color: #942d27; }
 
 .intro { position: relative; height: auto; transform: translateZ(0); }
 
 #img { position: relative; background-color: #0A2421; background-image: url(../images/foggywoods.jpg); background-position: center bottom; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; width: 100%; height: 70vh; z-index: 1; }
+
+#learncontainer { width: 100%; display: flex; align-items: center; justify-content: center; }
+
+#learnbutton { display: flex; align-items: center; justify-content: center; font-family: Overpass Mono, monospace; color: white; background-color: #16BAC5; user-select: none; transition: all 0.1s; transition-property: background-color, border, box-shadow; border: 8px solid #16BAC5; box-shadow: inset 0 0 0 3px #13a0a9; padding: 20px; text-decoration: none; }
+#learnbutton:hover { background-color: #13a0a9; border: 8px solid #13a0a9; box-shadow: inset 0 0 0 3px #10868e; }
 
 .intro .caption { position: absolute; bottom: 25%; left: 0%; width: 100%; text-align: center; z-index: 3; color: white; }
 .intro .caption h1 { display: inline-block; width: 70%; font-size: 6vw; font-weight: 100; }
@@ -68,6 +73,6 @@ html, body { width: 100%; height: 100%; font-family: Lato, sans-serif; transitio
 .copy { width: 100%; max-width: 60rem; height: 200%; margin: 0 auto; padding: 0 5vw 0 5vw; color: white; font-size: 24px; }
 .copy p { margin-bottom: 1.5rem; }
 .copy hr { margin: 20px 0 20px 0; border-color: white; }
-.copy blockquote, .copy code { font-family: Overpass Mono; }
+.copy blockquote, .copy code { font-family: Overpass Mono, monospace; }
 
 .copy .teaser { text-align: center; }
