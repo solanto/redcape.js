@@ -40,8 +40,8 @@ DEALINGS IN THE SOFTWARE.
 .arrowfade { opacity: 0; }
 
 #title { display: flex; align-items: baseline; justify-content: center; text-align: center; padding: 40px; width: 100%; user-select: none; }
-#title #redcape { justify-content: flex-end; flex-basis: 0.5vw; font-family: Fredericka the Great, Times New Roman, Tinos, serif; font-size: 110px; }
-#title #js { position: relative; flex-basis: 50px; font-family: Overpass Mono; font-size: 30px; }
+#title #redcape { justify-content: flex-end; flex-basis: 0.5vw; font-family: Fredericka the Great, Times New Roman, Tinos, serif; font-size: 6rem; }
+#title #js { position: relative; flex-basis: 50px; font-family: Overpass Mono; font-size: 1.6rem; }
 
 #jsoffset { flex-grow: 1; }
 
@@ -56,21 +56,24 @@ html, body { width: 100%; height: 100%; font-family: Lato, sans-serif; transitio
 .intro { position: relative; height: auto; transform: translateZ(0); }
 
 #img { position: relative; background-color: #0A2421; background-image: url(../images/foggywoods.jpg); background-position: center bottom; background-attachment: fixed; background-repeat: no-repeat; background-size: cover; width: 100%; height: 70vh; z-index: 1; }
+@media all and (orientation: portrait) { #img { background-image: none; height: 12rem; } }
 
-#learncontainer { width: 100%; display: flex; align-items: center; justify-content: center; }
+#learnsection { width: 100%; display: flex; align-items: center; justify-content: center; }
 
-#learnbutton { display: flex; align-items: center; justify-content: center; font-family: Overpass Mono, monospace; color: white; background-color: #16BAC5; user-select: none; transition: all 0.1s; transition-property: background-color, border, box-shadow; border: 8px solid #16BAC5; box-shadow: inset 0 0 0 3px #13a0a9; padding: 20px; text-decoration: none; }
-#learnbutton:hover { background-color: #13a0a9; border: 8px solid #13a0a9; box-shadow: inset 0 0 0 3px #10868e; }
+#learncontainer { background-image: url(../images/foggywoods.jpg); background-position: center 90%; box-shadow: inset 0 0 0 8px #16BAC5; font-family: Overpass Mono, monospace; color: white; user-select: none; text-decoration: none; }
+#learncontainer:hover #learnbutton { background-color: transparent; border: 8px solid transparent; box-shadow: inset 0 0 0 3px transparent; transform: scale(0.9); }
+
+#learnbutton { display: flex; align-items: center; justify-content: center; background-color: #16BAC5; transition: all 0.1s; transition-property: background-color, border, box-shadow, transform; border: 8px solid #16BAC5; box-shadow: inset 0 0 0 3px #13a0a9; padding: 20px; }
 
 .intro .caption { position: absolute; bottom: 25%; left: 0%; width: 100%; text-align: center; z-index: 3; color: white; }
-.intro .caption h1 { display: inline-block; width: 70%; font-size: 6vw; font-weight: 100; }
+.intro .caption h1 { display: inline-block; font-size: 6.2rem; font-weight: 100; }
 
 .intro .overlay { position: absolute; bottom: -2px; left: 0; width: 100%; height: 100%; z-index: 2; pointer-events: none; }
 .intro .overlay svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 .scrollspacer { height: 15vh; width: auto; }
 
-.copy { width: 100%; max-width: 60rem; height: 200%; margin: 0 auto; padding: 0 5vw 0 5vw; color: white; font-size: 24px; }
+.copy { width: 100%; max-width: 60rem; height: 200%; margin: 0 auto; padding: 0 5vw 0 5vw; color: white; font-size: 1.3rem; }
 .copy p { margin-bottom: 1.5rem; }
 .copy hr { margin: 20px 0 20px 0; border-color: white; }
 .copy blockquote, .copy code { font-family: Overpass Mono, monospace; }
