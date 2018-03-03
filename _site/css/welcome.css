@@ -34,10 +34,18 @@ DEALINGS IN THE SOFTWARE.
 .material-icons.md-48 { font-size: 48px; }
 
 #arrow { margin-top: 15px; display: flex; justify-content: center; transition: opacity 0.5s; user-select: none; }
+#arrow.downarrow { opacity: 1; }
+#arrow.arrowfade { opacity: 0; }
 
-.downarrow { opacity: 1; }
+#move { display: inline-block; transition: transform 0.2s; }
+#move.rotateleft { transform: rotate(-3deg); }
+#move.rotateright { transform: rotate(3deg); }
 
-.arrowfade { opacity: 0; }
+#color { transition: color 0.5s; color: white; }
+#color.mint { transition: color 0s; color: #03CEA4; }
+
+#input { text-decoration: underline; cursor: pointer; transition: transform, 0.2s; display: inline-block; }
+#input.stretch { transform: scale(2.4, 0.7); }
 
 #title { display: flex; align-items: baseline; justify-content: center; text-align: center; padding: 40px; width: 100%; user-select: none; }
 #title #redcape { justify-content: flex-end; flex-basis: 0.5vw; font-family: Fredericka the Great, Times New Roman, Tinos, serif; font-size: 6rem; }
@@ -60,7 +68,7 @@ html, body { width: 100%; height: 100%; font-family: Lato, sans-serif; transitio
 
 #learnsection { width: 100%; display: flex; align-items: center; justify-content: center; }
 
-#learncontainer { background-image: url(../images/foggywoods.jpg); background-position: center 90%; box-shadow: inset 0 0 0 8px #16BAC5; font-family: Overpass Mono, monospace; color: white; user-select: none; text-decoration: none; }
+#learncontainer { background-image: url(../images/foggywoods.jpg); background-color: #0A2421; background-attachment: fixed; background-position: center 90%; box-shadow: inset 0 0 0 8px #16BAC5; font-family: Overpass Mono, monospace; color: white; user-select: none; text-decoration: none; }
 #learncontainer:hover #learnbutton { background-color: transparent; border: 8px solid transparent; box-shadow: inset 0 0 0 3px transparent; transform: scale(0.9); }
 
 #learnbutton { display: flex; align-items: center; justify-content: center; background-color: #16BAC5; transition: all 0.1s; transition-property: background-color, border, box-shadow, transform; border: 8px solid #16BAC5; box-shadow: inset 0 0 0 3px #13a0a9; padding: 20px; }

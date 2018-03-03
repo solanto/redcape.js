@@ -48,14 +48,48 @@ $yellow:#FFDA00;
   justify-content: center;
   transition: opacity 0.5s;
   user-select: none;
+
+  &.downarrow {
+    opacity: 1;
+  }
+
+  &.arrowfade {
+    opacity: 0;
+  }
 }
 
-.downarrow {
-  opacity: 1;
+#move {
+  display: inline-block;
+  transition: transform 0.2s;
+
+  &.rotateleft {
+    transform: rotate(-3deg);
+  }
+
+  &.rotateright {
+    transform: rotate(3deg);
+  }
 }
 
-.arrowfade {
-  opacity: 0;
+#color {
+  transition: color 0.5s;
+  color: white;
+
+  &.mint {
+    transition: color 0s;
+    color: $mint;
+  }
+}
+
+#input {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: transform, 0.2s;
+  display: inline-block;
+
+  &.stretch {
+    transform: scale(2.4, 0.7);
+  }
 }
 
 #title {
@@ -115,7 +149,7 @@ html, body {
 
 #img {
   position: relative;
-  background-color: #0A2421;
+  background-color: $darkforest;
   background-image: url(../images/foggywoods.jpg);
   background-position: center bottom;
   background-attachment: fixed;
@@ -125,7 +159,7 @@ html, body {
   height: 70vh;
   z-index: 1;
 
-  @media all and  (orientation:portrait) {
+  @media all and (orientation:portrait) {
     background-image: none;
     height: 12rem;
   }
@@ -142,6 +176,8 @@ html, body {
   // this container ensures that the #learnbutton won't flash between normal and :hover if it shrinks away from the cursor
 
   background-image: url(../images/foggywoods.jpg);
+  background-color: $darkforest;
+  background-attachment: fixed;
   background-position: center 90%;
   box-shadow: inset 0 0 0 8px $pacific;
   font-family: Overpass Mono, monospace;

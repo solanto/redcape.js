@@ -30,8 +30,7 @@ DEALINGS IN THE SOFTWARE.
 	<meta charset="utf-8">
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="css/welcome.css" />
-	<script src="js/welcome.js"></script>
+	<link rel="stylesheet" href="css/welcome.css">
 
 	<body class="bright">
 		<figure class="intro">
@@ -59,14 +58,14 @@ DEALINGS IN THE SOFTWARE.
 
 <hr />
 
-<p>Responsive pages are the future of the web. Many of the webpages you use every day are much more than static; they <span id="move">move</span>, change <span id="color">color</span>, and react to your <span id="input">input</span>.</p>
+<p>Responsive pages are the future of the web. Many of the webpages you use every day are much more than static; they <span><span id="move">move</span></span>, change <span id="color">color</span>, and react to your <span id="input" onclick="stretchInput();">input</span>.</p>
 
 <p>The instructions Mother gives to Red-Cape are spoken in English.</p>
 <blockquote>
   <p>Stay on the path and don’t run, or you might fall.</p>
 </blockquote>
 
-<p>The instructions that tell a browser how a page should act are written in JavaScript.</p>
+<p>The instructions that tell a browser how a page should act can be written in JavaScript.</p>
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">redcape</span><span class="p">.</span><span class="nx">stayOnPath</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 <span class="nx">redcape</span><span class="p">.</span><span class="nx">walk</span><span class="p">();</span>
 </code></pre></div></div>
@@ -80,4 +79,6 @@ DEALINGS IN THE SOFTWARE.
 			</div>
 		</article>
 	</body>
+
+	<script src="js/welcome.js"></script>
 </html>
