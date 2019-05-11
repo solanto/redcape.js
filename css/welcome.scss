@@ -284,7 +284,7 @@ footer {
   display: flex;
   justify-content: center;
   padding-bottom: 15px;
-  color: darken($auburn, 50%);
+  color: darken($auburn, 25%);
   font-size: 0.9rem;
   
   p {
@@ -293,6 +293,6 @@ footer {
   }
   
   a:visited {
-  	color: darken($auburn, 50%);
+  	color: darken($auburn, 25%);
   }
 }
