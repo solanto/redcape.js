@@ -279,3 +279,19 @@ html, body {
 .copy .teaser {
   text-align: center;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  color: darken($auburn, 75%);
+  
+  p {
+    display: inline;
+    padding: 0 0.3rem 0 0.3rem;
+  }
+  
+  a:visited {
+  	color: darken($auburn, 75%);
+  }
+}
