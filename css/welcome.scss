@@ -261,7 +261,10 @@ html, body {
   padding: 0 5vw 0 5vw;
   color: white;
   font-size: 1.1rem;
-  margin: 0 0 0.8rem 0;
+  
+  :only-of-type {
+    margin: 0 0 0.8rem 0;
+  }
 
   hr {
     margin: 20px 0 20px 0;
