@@ -87,6 +87,7 @@ $yellow:#FFDA00;
   cursor: pointer;
   transition: transform, 0.2s;
   display: inline-block;
+  background-color: $auburn;
 
   &.stretch {
     transform: scale(2.4, 0.7);
