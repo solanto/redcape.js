@@ -28,7 +28,7 @@ setInterval(rotateMove, 250);
 
 var colorSpan = document.getElementById("color");
 function colorBeat() {
-  colorSpan.className = "mint";
+  colorSpan.className = "pacific";
   setTimeout(function() {colorSpan.className = "";}, 20);
 }
 
