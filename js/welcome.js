@@ -1,11 +1,13 @@
+var arrow = document.getElementById("arrow");
+var body = document.body;
 window.addEventListener("scroll", function(e) {
-  var arrow = document.getElementById("arrow");
-  var body = document.body;
   if (document.documentElement.scrollTop > 0) {
     arrow.className = arrow.className.replace("downarrow", "arrowfade");
+    arrow.style.pointerEvents = "none";
     // body.className = body.className.replace("bright", "muted");
   } else {
     arrow.className = arrow.className.replace("arrowfade", "downarrow");
+    arrow.style.pointerEvents = "";
     // body.className = body.className.replace("muted", "bright");
   }
 });
