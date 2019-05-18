@@ -292,6 +292,10 @@ footer {
     display: inline;
     padding: 0 0.3rem 0 0.3rem;
   }
+
+  a {
+    color: darken($auburn, 14%);
+  }
   
   a:visited {
   	color: darken($auburn, 14%);
